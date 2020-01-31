@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using basiccalculator;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace basiccalculator.Tests
 {
@@ -12,16 +8,17 @@ namespace basiccalculator.Tests
         [TestMethod()]
         public void AddTest()
         {
-            var c = Calculator.Add(1, 2);
-            Assert.AreEqual(3, c);
-
+            var _Calculator = new Calculator();
+            _Calculator.Add(1, 2);
+            Assert.AreEqual(3, _Calculator.Result);
         }
 
         [TestMethod()]
         public void SubtractTest()
         {
-            var c = Calculator.Subtract(1, 2);
-            Assert.AreEqual(-1, c);
+            var _Calculator = new Calculator();
+            _Calculator.Subtract(1, 2);
+            Assert.AreEqual(-1, _Calculator.Result);
         }
     }
 }

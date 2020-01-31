@@ -1,20 +1,26 @@
 ﻿using System;
+using MathOperations;
 
 namespace basiccalculator
 {
     public class Calculator
     {
-        static public int Add(int a, int b)
-        {
-            var c = a + b;
+        private int _result;
 
-            return c;
+        public int Result {
+            get => _result;
+            set => _result = value;
         }
-        static public int Subtract(int a, int b)
+        public int Add(int a, int b)
         {
-            var c = a - b;
+            Result = Addition.Sum(a, b);
+            return Result;
+        }
+        public int Subtract(int a, int b)
+        {
+            Result = Subtraction.Result(a, b);
+            return Result;
 
-            return c;
         }
 
     }
