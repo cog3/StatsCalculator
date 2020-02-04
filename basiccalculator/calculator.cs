@@ -7,15 +7,17 @@ namespace basiccalculator
     {
         private int _result;
 
-        public int Result {
+        public dynamic Result {
             get => _result;
             set => _result = value;
         }
-        public int Add(int a, int b)
+ 
+        public dynamic Sum(dynamic a, dynamic b)
         {
             Result = Addition.Sum(a, b);
             return Result;
         }
+
         public int Subtract(int a, int b)
         {
             Result = Subtraction.Result(a, b);

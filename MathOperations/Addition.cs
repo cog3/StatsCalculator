@@ -4,11 +4,17 @@ namespace MathOperations
 {
     public static class Addition
     {
-        static public int Sum(int a, int b)
+        static public int Sum(int augEnd, int addEnd)
         {
-            var c = a + b;
+            var sum = augEnd + addEnd;
 
-            return c;
+            return sum;
+        }
+        static public double Sum(double augEnd, double addEnd)
+        {
+            var sum = augEnd + addEnd;
+
+            return sum;
         }
     }
 }
