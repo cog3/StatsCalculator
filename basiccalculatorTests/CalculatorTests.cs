@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using basiccalculator;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace basiccalculator.Tests
 {
@@ -35,6 +36,22 @@ namespace basiccalculator.Tests
         {
             Calculator.Subtract(aInt, bInt);
             Assert.AreEqual(-1, Calculator.Result);
+        }
+
+        [TestMethod()]
+        public void SumIntTest()
+        {
+            int[] arrayList = {1, 2, 3 };
+            Calculator.Sum(arrayList);
+            Assert.AreEqual(6, Calculator.Result);
+        }
+
+        [TestMethod()]
+        public void SumDoubleTest()
+        {
+            decimal[] arrayList = { 1.1M, 2.1M, 3.1M };
+            Calculator.Sum(arrayList);
+            Assert.AreEqual(6.3M, Calculator.Result);
         }
     }
 }

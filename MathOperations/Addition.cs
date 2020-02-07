@@ -10,11 +10,34 @@ namespace MathOperations
 
             return sum;
         }
-        static public double Sum(double augEnd, double addEnd)
+        static public decimal Sum(decimal augEnd, decimal addEnd)
         {
             var sum = augEnd + addEnd;
 
             return sum;
+        }
+
+        static public decimal Sum(decimal[] doubleArray)
+        {
+            decimal result = 0;
+
+            foreach( var x in doubleArray )
+            {
+                result = Sum(result, x);
+            }
+
+            return result;
+        }
+        static public int Sum(int[] doubleArray)
+        {
+            int result = 0;
+
+            foreach (var x in doubleArray)
+            {
+                result = Sum(result, x);
+            }
+
+            return result;
         }
     }
 }

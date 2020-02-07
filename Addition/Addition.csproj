@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Addition\Addition.csproj" />
     <ProjectReference Include="..\MathOperations\MathOperations.csproj" />
-    <ProjectReference Include="..\Subtraction\Subtraction.csproj" />
   </ItemGroup>
 
 </Project>
