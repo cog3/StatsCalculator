@@ -19,7 +19,7 @@ namespace MathOperations
 
         static public decimal Sum(decimal[] doubleArray)
         {
-            decimal result = 0;
+            decimal result = 0M;
 
             foreach( var x in doubleArray )
             {
