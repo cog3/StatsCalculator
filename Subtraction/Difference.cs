@@ -3,7 +3,7 @@ using MathOperations;
 namespace Subtraction
 {
 
-    public class Difference
+    public class Difference : ISubtract
     {
         private dynamic Result;
 

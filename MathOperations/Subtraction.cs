@@ -6,9 +6,7 @@ namespace MathOperations
     {
         static public int Result(int a, int b)
         {
-            var c = a - b;
-
-            return c;
+            return a - b; ;
         }
     }
 }

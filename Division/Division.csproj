@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Addition\Addition.csproj" />
+    <ProjectReference Include="..\basiccalculatorTests\basiccalculatorTests.csproj" />
+    <ProjectReference Include="..\basiccalculator\basiccalculator.csproj" />
+    <ProjectReference Include="..\MathOperationsTests\MathOperationsTests.csproj" />
+    <ProjectReference Include="..\MathOperations\MathOperations.csproj" />
+    <ProjectReference Include="..\StatisticsCalculatorTests\StatisticsCalculatorTests.csproj" />
+    <ProjectReference Include="..\StatisticsCalculator\StatisticsCalculator.csproj" />
+    <ProjectReference Include="..\StatsOperations\StatsOperations.csproj" />
+    <ProjectReference Include="..\Subtraction\Subtraction.csproj" />
+  </ItemGroup>
+
+</Project>
