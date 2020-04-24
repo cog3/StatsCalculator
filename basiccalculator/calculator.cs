@@ -1,13 +1,13 @@
 ﻿using System;
-using MathOperations;
 using Addition;
 using Subtraction;
+using Division;
+using Multiplication;
 
 namespace basiccalculator
 {
-    public class Calculator : IAdd, ISubtract
+    public class Calculator : IAdd, ISubtract, IDivision, IMultiply
     {
-        private dynamic _result;
 
         public dynamic Result
         {
@@ -17,6 +17,9 @@ namespace basiccalculator
 
         Adding Addition = new Adding();
         Difference Subtraction = new Difference();
+        Divide Division = new Divide();
+        Multiply Multiplication = new Multiply();
+        private dynamic _result;
 
         public dynamic Sum(dynamic a, dynamic b)
         {
@@ -35,6 +38,26 @@ namespace basiccalculator
             Result = Subtraction.Subtract(a, b);
             return Result;
 
+        }
+        public int Quotient(int Dividend, int Divisor)
+        {
+            Result = Division.Quotient(Dividend, Divisor);
+            return Result;
+        }
+        public decimal Quotient(decimal Dividend, decimal Divisor)
+        {
+            Result = Division.Quotient(Dividend, Divisor);
+            return Result;
+        }
+        public int Product(int a, int b)
+        {
+            Result = Multiplication.Product(a, b);
+            return Result;
+        }
+        public decimal Product(decimal a, decimal b)
+        {
+            Result = Multiplication.Product(a, b);
+            return Result;
         }
 
     }

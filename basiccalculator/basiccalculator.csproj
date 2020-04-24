@@ -6,7 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Addition\Addition.csproj" />
-    <ProjectReference Include="..\MathOperations\MathOperations.csproj" />
+    <ProjectReference Include="..\Division\Division.csproj" />
+    <ProjectReference Include="..\Multiplication\Multiplication.csproj" />
     <ProjectReference Include="..\Subtraction\Subtraction.csproj" />
   </ItemGroup>
 

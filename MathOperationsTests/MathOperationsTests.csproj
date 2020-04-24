@@ -14,7 +14,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Addition\Addition.csproj" />
+    <ProjectReference Include="..\basiccalculatorTests\basiccalculatorTests.csproj" />
+    <ProjectReference Include="..\basiccalculator\basiccalculator.csproj" />
+    <ProjectReference Include="..\Division\Division.csproj" />
     <ProjectReference Include="..\MathOperations\MathOperations.csproj" />
+    <ProjectReference Include="..\Multiplication\Multiplication.csproj" />
+    <ProjectReference Include="..\StatisticsCalculatorTests\StatisticsCalculatorTests.csproj" />
+    <ProjectReference Include="..\StatisticsCalculator\StatisticsCalculator.csproj" />
+    <ProjectReference Include="..\StatsOperations\StatsOperations.csproj" />
+    <ProjectReference Include="..\Subtraction\Subtraction.csproj" />
   </ItemGroup>
 
 </Project>

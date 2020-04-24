@@ -1,5 +1,4 @@
 ﻿using System;
-using MathOperations;
 namespace Subtraction
 {
 
@@ -9,7 +8,7 @@ namespace Subtraction
 
         public int Subtract(int a, int b)
         {
-            Result = MathOperations.Subtraction.Result(a, b);
+            Result = Result(a, b);
             return Result;
 
         }

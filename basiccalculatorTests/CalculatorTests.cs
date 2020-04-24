@@ -13,24 +13,19 @@ namespace basiccalculator.Tests
         private readonly double bDouble = 2.5;
 
         [TestInitialize()]
-        public void Setup()
-        {
-
-        }
-
+        public void Setup(){}
         [TestMethod()]
         public void AddIntegerTest()
         {
             Calculator.Sum(aInt, bInt);
             Assert.AreEqual(3, Calculator.Result);
         }
+        [TestMethod()]
         public void AddDoubleTest()
         {
             Calculator.Sum(aDouble, bDouble);
             Assert.AreEqual(4, Calculator.Result);
         }
-
-
         [TestMethod()]
         public void SubtractTest()
         {
@@ -52,6 +47,30 @@ namespace basiccalculator.Tests
             decimal[] arrayList = { 1.1M, 2.1M, 3.1M };
             Calculator.Sum(arrayList);
             Assert.AreEqual(6.3M, Calculator.Result);
+        }
+        [TestMethod()]
+        public void QuotientIntTest()
+        {
+            int result = Calculator.Quotient(25, 5);
+            Assert.AreEqual(5, result);
+        }
+        [TestMethod()]
+        public void QuotientDecimalTest()
+        {
+            decimal result = Calculator.Quotient(7.7m, 2.5m);
+            Assert.AreEqual(3.08m, result);
+        }
+        [TestMethod()]
+        public void ProductIntTest()
+        {
+            int product = Calculator.Product(40, 2);
+            Assert.AreEqual(80, product);
+        }
+        [TestMethod()]
+        public void ProductDecimalTest()
+        {
+            decimal product = Calculator.Product(3.5m, 2.0m);
+            Assert.AreEqual(7.0m, product);
         }
     }
 }
