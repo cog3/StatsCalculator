@@ -1,17 +1,18 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Population_Sampling</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Random Generator\Random Generator.csproj" />
     <ProjectReference Include="..\Addition\Addition.csproj" />
+    <ProjectReference Include="..\basiccalculatorTests\basiccalculatorTests.csproj" />
     <ProjectReference Include="..\basiccalculator\basiccalculator.csproj" />
     <ProjectReference Include="..\Division\Division.csproj" />
     <ProjectReference Include="..\Multiplication\Multiplication.csproj" />
-    <ProjectReference Include="..\Population Sampling\Population Sampling.csproj" />
-    <ProjectReference Include="..\StatsOperations\StatsOperations.csproj" />
     <ProjectReference Include="..\Subtraction\Subtraction.csproj" />
   </ItemGroup>
 

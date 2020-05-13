@@ -29,6 +29,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multiplication", "Multiplic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Random Generator", "..\Random Generator\Random Generator.csproj", "{61BD4477-8822-4577-B571-DA2D63100644}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Population Sampling", "Population Sampling\Population Sampling.csproj", "{4EAEFE81-C321-44AA-B6EE-788160071C2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DescriptiveStats", "DescriptiveStats\DescriptiveStats.csproj", "{6A284C57-FCD3-4660-96CD-9C2312AAE1B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{61BD4477-8822-4577-B571-DA2D63100644}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61BD4477-8822-4577-B571-DA2D63100644}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61BD4477-8822-4577-B571-DA2D63100644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EAEFE81-C321-44AA-B6EE-788160071C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EAEFE81-C321-44AA-B6EE-788160071C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EAEFE81-C321-44AA-B6EE-788160071C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAEFE81-C321-44AA-B6EE-788160071C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A284C57-FCD3-4660-96CD-9C2312AAE1B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A284C57-FCD3-4660-96CD-9C2312AAE1B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A284C57-FCD3-4660-96CD-9C2312AAE1B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A284C57-FCD3-4660-96CD-9C2312AAE1B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

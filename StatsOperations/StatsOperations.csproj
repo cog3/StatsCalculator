@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Random Generator\Random Generator.csproj" />
+    <ProjectReference Include="..\Addition\Addition.csproj" />
+    <ProjectReference Include="..\basiccalculatorTests\basiccalculatorTests.csproj" />
+    <ProjectReference Include="..\basiccalculator\basiccalculator.csproj" />
+    <ProjectReference Include="..\Division\Division.csproj" />
+    <ProjectReference Include="..\Multiplication\Multiplication.csproj" />
+    <ProjectReference Include="..\Subtraction\Subtraction.csproj" />
+  </ItemGroup>
+
 </Project>
